@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: #f3dada;
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
@@ -16,15 +16,20 @@ body {
 }
 
 canvas {
-  border: 2px solid steelblue;
+  border: 2px dashed rgb(9, 82, 239);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background-color: #fff;
 }
 
 .toolbox {
   background-color: steelblue;
   border: 1px solid slateblue;
   display: flex;
-  width: 804px;
-  padding: 1rem;
+  width: 1305px;
+  padding: 0.5rem 1rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem
 }
 
 .toolbox > * {
@@ -43,4 +48,29 @@ canvas {
 
 .toolbox > *:last-child {
   margin-left: auto;
+}
+
+button, #size, #color{
+  padding: 0.3rem;
+  border-radius: 1.5rem;
+  width: 5rem;
+}
+
+#color{
+  width: 10rem;
+  padding: 0.3rem 1rem;
+}
+
+#clear{
+  width: 6rem;
+  font-size: medium;
+  color: rgb(49, 49, 245);
+  transition: all 0.5sec ease;
+}
+
+#clear:hover{
+  background-color: rgb(168, 229, 229);
+  color: rgb(224, 64, 64);
+  font-weight: 600;
+  transition: all 0.5sec ease;
 }
